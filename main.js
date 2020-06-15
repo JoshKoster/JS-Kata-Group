@@ -186,7 +186,4 @@ const kata17heading = docunment.createElement(h1)
 kate17heading.append('Katat 17')
 mainElement.append(kata17heading)
  
-    let reduceArray = document.createElement('p')
-    reduceArray.append(sampleArray.reduce((a, b) => a + b))
-    reduceArray.className = "Kata 17"
-    mainElement.append(reduceArray)
+   
