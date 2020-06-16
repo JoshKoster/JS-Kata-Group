@@ -211,21 +211,11 @@ mainElement.append(kata14heading)
 mainElement.append(kata14UL)
 
 for (let counter14 = 0; counter14 < sampleArray.length; counter14 +=1) {
-  // const isSquare = Number.isInteger(Math.pow(sampleArray[counter14], 2));
-  // if (isSquare) {
-
     kata14LI = document.createElement('li')
-
     kata14LI.append(Math.pow(sampleArray[counter14],2))
+    kata14UL.append(kata14LI);
 
-  kata14UL.append(kata14LI);
-
-
-  // }
-// console.log(Math.pow(sampleArray[counter14], 2))
 }
-
-
 
 const kata15heading = document.createElement('h1')
 const kata15UL= document.createElement('ul')
