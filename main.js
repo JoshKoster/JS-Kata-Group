@@ -35,8 +35,8 @@ mainElement.append(kata3heading)
 for (let index = 1; index <= 20; index += 2) {
     let coolText = document.createElement('p')
     coolText.append(index)
-    coolText.className = "Kata 2"
-    documentBody.append(cooltext)
+    coolText.className = "Kata 3"
+    documentBody.append(coolText)
 }
 
 const kata4heading = document.createElement('h1')
@@ -51,7 +51,7 @@ for (let index = 5; index <= 100; index+= 5) {
 }
 const kata5heading = document.createElement('h1')
 kata5heading.append('Katat 5')
-mainElement.append(squareNumber)
+mainElement.append(kata5heading)
 
 for (let index = 1; index <= 10; index ++) {
     let squareNumber= document.createElement('p')
@@ -68,7 +68,7 @@ for (let index = 20; index > 0; index--) {
     let backWard = document.creeteElement('p')
     backWard.append(index)
     backWard.className = "Kata 6"
-    mainElement.append(backWard)
+    documentBody.append(backWard)
 }
 
 const kata7heading = docunment.createElement(h1)
@@ -79,7 +79,7 @@ for (let index = 20; index > 0; index -= 2) {
     let evenBack = document.creeteElement('p')
     evenBack.append(index)
     evenBack.className = "Kata 7"
-    mainElement.append(evenBack)
+    documentBody.append(evenBack)
 }
 
 const kata8heading = docunment.createElement(h1)
@@ -90,7 +90,7 @@ for (let index = 19; index > 0; index -= 2) {
     let oddBack = document.creeteElement('p')
     oddBack.append(index)
     oddBack.className = "Kata 8"
-    mainElement.append(oddBack)
+    documentBody.append(oddBack)
 }
 
 const kata9heading = docunment.createElement(h1)
@@ -112,7 +112,7 @@ for (let index = 10; index > 0; index--) {
     let downSquarNumber = document.creeteElement('p')
     downSquarNumber.append(index ** 2)
     downSquarNumber.className = "Kata 10"
-    mainElement.append(squarNumber)
+    mainElement.append(downsquarNumber)
 }
 
 const kata11heading = docunment.createElement(h1)
