@@ -1,274 +1,206 @@
 // code worked with Tony Cain, Colin Stacheirodt
-const mainElement = document.querySelector('main')
-
 const sampleArray = [
     469, 755, 244, 245, 758, 450, 302, 20, 712, 71,
     456, 21, 398, 339, 882, 848, 179, 535, 940, 472,
 ];
-
+const documentBody = document.querySelector('body')
+//const button1 = document.getElementById('katal1')
+const mainElement = document.querySelector('main')
 const kata1heading = document.createElement('h1')
-const kata1UL = document.createElement('ul')
-kata1heading.append('Kata 1')
+kata1heading.append('Katat 1')
 mainElement.append(kata1heading)
-mainElement.append(kata1UL)
 
+for (let index = 1; index <= 20; index++) {
+    let coolText = document.createElement('p')
+    coolText.append(index)
+    coolText.className = "Kata 1"
+    mainElement.append(coolText)
+}
 
-  for(let counter = 1; counter <= 20; counter += 1 ){
-    kata1LI = document.createElement('li')
-
-      kata1LI.append(counter)
-
-    kata1UL.append(kata1LI);
-
-  }
 const kata2heading = document.createElement('h1')
-const kata2UL= document.createElement('ul')
-kata2heading.append('Kata 2')
+kata2heading.append('Katat 2')
 mainElement.append(kata2heading)
-mainElement.append(kata2UL)
 
-
-for (counter2 = 1; counter2 <= 20; counter2++) {
-    if (counter2 % 2 === 0) {
-    //   console.log(counter2);
-    kata2LI = document.createElement('li')
-
-    kata2LI.append(counter2)
-
-  kata2UL.append(kata2LI);
-    }
-
-
-  }
+for (let index = 2; index <= 20; index += 2) {
+    let evenText = document.createElement('p')
+    evenText.append(index)
+    evenText.className = "Kata 2"
+    mainElement.append(evenText)
+}
 
 const kata3heading = document.createElement('h1')
-const kata3UL= document.createElement('ul')
-kata3heading.append('Kata 3')
+kata3heading.append('Katat 3')
 mainElement.append(kata3heading)
-mainElement.append(kata3UL)
 
-
-  for (let counter3 = 1; counter3 <=20; counter3 +=2) {
-    kata3LI = document.createElement('li')
-
-    kata3LI.append(counter3)
-
-  kata3UL.append(kata3LI);
-  }
-
+for (let index = 1; index <= 20; index += 2) {
+    let evenText = document.createElement('p')
+    evenText.append(index)
+    evenText.className = "Kata 3"
+    mainElement.append(evenText)
+}
 const kata4heading = document.createElement('h1')
-const kata4UL= document.createElement('ul')
-kata4heading.append('Kata 4')
+kata4heading.append('Katat 4')
 mainElement.append(kata4heading)
-mainElement.append(kata4UL)
-for (let counter4 = 5; counter4 <= 100; counter4 += 5) {
-    kata4LI = document.createElement('li')
 
-    kata4LI.append(counter4)
-
-  kata4UL.append(kata4LI);
-  }
+for (let index = 5; index <= 100; index += 5) {
+    let countByFive = document.createElement('p')
+    countByFive.append(index)
+    countByFive.className = "Kata 4"
+    mainElement.append(countByFive)
+}
 
 const kata5heading = document.createElement('h1')
-const kata5UL= document.createElement('ul')
-kata5heading.append('Kata 5')
+kata5heading.append('Katat 5')
 mainElement.append(kata5heading)
-mainElement.append(kata5UL)
-for (let counter5 = 1; counter5 <= 100; counter5 +=1) {
-  const isSquare = Number.isInteger(Math.sqrt(counter5));
-  if (isSquare) {
-    kata5LI = document.createElement('li')
 
-    kata5LI.append(counter5)
-
-  kata5UL.append(kata5LI);
-  }
+for (let index = 1; index <= 10; index ++) {
+    let squarNumber = document.createElement('p')
+    squarNumber.append(index ** 2)
+    squarNumber.className = "Kata 5"
+    mainElement.append(squarNumber)
 }
-
 
 const kata6heading = document.createElement('h1')
-const kata6UL= document.createElement('ul')
-kata6heading.append('Kata 6')
+kata6heading.append('Katat 6')
 mainElement.append(kata6heading)
-mainElement.append(kata6UL)
-for(let counter6 = 20; counter6>= 1; counter6-- ){
-    kata6LI = document.createElement('li')
 
-    kata6LI.append(counter6)
-
-  kata6UL.append(kata6LI);
-
-  }
-const kata7heading = document.createElement('h1')
-const kata7UL= document.createElement('ul')
-kata7heading.append('Kata 7')
-mainElement.append(kata7heading)
-mainElement.append(kata7UL)
-for (counter7 = 20; counter7 >= 1; counter7--) {
-    if (counter7 % 2 === 0) {
-    //   console.log(counter2);
-    kata7LI = document.createElement('li')
-
-    kata7LI.append(counter7)
-
-  kata7UL.append(kata7LI);
-    }
-
-  }
-
-const kata8heading = document.createElement('h1')
-const kata8UL= document.createElement('ul')
-kata8heading.append('Kata 8')
-mainElement.append(kata8heading)
-mainElement.append(kata8UL)
-
-for (let counter8 = 19; counter8 >= 1; counter8 -= 2) {
-  kata8LI = document. createElement('li')
-  kata8LI.append(counter8)
-  kata8UL.append(kata8LI)
+for (let index = 20; index > 0; index--) {
+    let backWard = document.createElement('p')
+    backWard.append(index)
+    backWard.className = "Kata 6"
+    mainElement.append(backWard)
 }
 
+const kata7heading = document.createElement('h1')
+kata7heading.append('Katat 7')
+mainElement.append(kata7heading)
+
+for (let index = 20; index > 0; index -= 2) {
+    let evenBack = document.createElement('p')
+    evenBack.append(index)
+    evenBack.className = "Kata 7"
+    mainElement.append(evenBack)
+}
+
+const kata8heading = document.createElement('h1')
+kata8heading.append('Katat 8')
+mainElement.append(kata8heading)
+
+for (let index = 19; index > 0; index -= 2) {
+    let oddBack = document.createElement('p')
+    oddBack.append(index)
+    oddBack.className = "Kata 8"
+    mainElement.append(oddBack)
+}
 
 const kata9heading = document.createElement('h1')
-const kata9UL= document.createElement('ul')
-kata9heading.append('Kata 9')
+kata9heading.append('Katat 9')
 mainElement.append(kata9heading)
-mainElement.append(kata9UL)
-for (let counter9 = 100; counter9 >= 5; counter9 -= 5) {
-    kata9LI = document.createElement('li')
 
-    kata9LI.append(counter9)
-
-  kata9UL.append(kata9LI);
-  }
+for (let index = 100; index > 5; index -= 5) {
+    let downByFive = document.createElement('p')
+    downByFive.append(index)
+    downByFive.className = "Kata 9"
+    mainElement.append(downByFive)
+}
 
 const kata10heading = document.createElement('h1')
-const kata10UL= document.createElement('ul')
-kata10heading.append('Kata 10')
+kata10heading.append('Katat 10')
 mainElement.append(kata10heading)
-mainElement.append(kata10UL)
 
-for (let counter10 = 100; counter10 >= 1; counter10 -=1) {
-    const isSquare = Number.isInteger(Math.sqrt(counter10));
-    if (isSquare) {
-      kata10LI = document.createElement('li')
-
-      kata10LI.append(counter10)
-
-    kata10UL.append(kata10LI);
-    }
-  }
-
-
+for (let index = 10; index > 0; index --) {
+    let downSquarNumber = document.createElement('p')
+    downSquarNumber.append(index ** 2)
+    downSquarNumber.className = "Kata 10"
+    mainElement.append(downSquarNumber)
+}
 
 const kata11heading = document.createElement('h1')
-const kata11UL= document.createElement('ul')
-kata11heading.append('Kata 11')
+kata11heading.append('Katat 11')
 mainElement.append(kata11heading)
-mainElement.append(kata11UL)
-for(counter11=0; counter11<sampleArray.length; counter11++){
-    kata11LI = document.createElement('li')
 
-    kata11LI.append(sampleArray[counter11])
-
-  kata11UL.append(kata11LI);
+for (let index = 0; index < sampleArray.length; index ++){
+    let arrayList = document.createElement('p')
+    arrayList.append(sampleArray[index])
+    arrayList.className = "Kata 11"
+    mainElement.append(arrayList)
 }
 
 const kata12heading = document.createElement('h1')
-const kata12UL= document.createElement('ul')
-kata12heading.append('Kata 12')
+kata12heading.append('Katat 12')
 mainElement.append(kata12heading)
-mainElement.append(kata12UL)
-for(counter12=0; counter12<sampleArray.length; counter12++){
-    if(sampleArray[counter12]% 2 === 0){
-    kata12LI = document.createElement('li')
 
-    kata12LI.append(sampleArray[counter12])
-
-  kata12UL.append(kata12LI);}
+for (let index = 0; index < sampleArray.length; index ++){
+    if(sampleArray[index] % 2 === 0 ){
+    let evenArrayList = document.createElement('p')
+    evenArrayList.append(sampleArray[index])
+    evenArrayList.className = "Kata 12"
+    mainElement.append(evenArrayList)}
 }
 
 const kata13heading = document.createElement('h1')
-const kata13UL= document.createElement('ul')
-kata13heading.append('Kata 13')
+kata13heading.append('Katat 13')
 mainElement.append(kata13heading)
-mainElement.append(kata13UL)
 
-for(counter13=0; counter13<sampleArray.length; counter13++){
-    if((sampleArray[counter13]% 2)!== 0){
-    kata13LI = document.createElement('li')
-
-    kata13LI.append(sampleArray[counter13])
-
-  kata13UL.append(kata13LI);}
-
+for (let index = 0; index < sampleArray.length; index ++){
+    if(sampleArray[index] % 2 === 1 ){
+    let oddArrayList = document.createElement('p')
+    oddArrayList.append(sampleArray[index])
+    oddArrayList.className = "Kata 13"
+    mainElement.append(oddArrayList)}
 }
-
 const kata14heading = document.createElement('h1')
-const kata14UL= document.createElement('ul')
-kata14heading.append('Kata 14')
+kata14heading.append('Katat 14')
 mainElement.append(kata14heading)
-mainElement.append(kata14UL)
 
-for (let counter14 = 0; counter14 < sampleArray.length; counter14 +=1) {
-    kata14LI = document.createElement('li')
-    kata14LI.append(Math.pow(sampleArray[counter14],2))
-    kata14UL.append(kata14LI);
-
+for (let index = 0; index < sampleArray.length; index ++) {
+    let arraySquarNumber = document.createElement('p')
+    arraySquarNumber.append(sampleArray[index] ** 2)
+    arraySquarNumber.className = "Kata 14"
+    mainElement.append(arraySquarNumber)
 }
 
 const kata15heading = document.createElement('h1')
-const kata15UL= document.createElement('ul')
-kata15heading.append('Kata 15')
+kata15heading.append('Katat 15')
 mainElement.append(kata15heading)
-mainElement.append(kata15UL)
-const numbersThru20Array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-let result= 0
-for(let counter15 = 0; counter15 < numbersThru20Array.length; counter15 += 1 ){
-
-result +=numbersThru20Array[counter15]
+    let sumNumber = 0
+for (let index = 1; index <= 20; index ++) {
+    let sumOfAll = document.createElement('p')
+    sumNumber += index
+    sumOfAll.append(sumNumber)
+    sumOfAll.className = "Kata 15"
+    mainElement.append(sumOfAll)
 }
-kata15LI = document.createElement('li')
-
-  kata15LI.append(result)
-
-kata15UL.append(kata15LI);
 
 const kata16heading = document.createElement('h1')
-const kata16UL= document.createElement('ul')
-kata16heading.append('Kata 16')
+kata16heading.append('Katat 16')
 mainElement.append(kata16heading)
-mainElement.append(kata16UL)
 
-let result2= 0
-for(let counter16 = 0; counter16 < sampleArray.length; counter16 += 1 ){
-
-result2 +=sampleArray[counter16]
-}
-kata16LI = document.createElement('li')
-
-  kata16LI.append(result2)
-
-kata16UL.append(kata16LI);
-
+    let reduceArray = document.createElement('p')
+    reduceArray.append(sampleArray.reduce((a, b) => a + b))  //all Collin
+    reduceArray.className = "Kata 16"
+    mainElement.append(reduceArray)
 
 const kata17heading = document.createElement('h1')
-const kata17UL= document.createElement('ul')
-kata17heading.append('Kata 17')
+kata17heading.append('Katat 17')
 mainElement.append(kata17heading)
-mainElement.append(kata17UL)
-
-
-kata17LI = document.createElement('li')
-  kata17LI.append(Math.min(...sampleArray))
-kata17UL.append(kata17LI);
+    
+   for(item of sampleArray) {
+    let minArray = Math.min(...sampleArray)
+    let somNum = document.createElement('p')
+    somNum.append(minArray)
+    somNum.className = "Kata 17"
+    mainElement.append(minArray)
+   }
 
 const kata18heading = document.createElement('h1')
-const kata18UL= document.createElement('ul')
-kata18heading.append('Kata 18')
+kata18heading.append('Katat 18')
 mainElement.append(kata18heading)
-mainElement.append(kata18UL)
-
-kata18LI = document.createElement('li')
-  kata18LI.append(Math.max(...sampleArray))
-kata18UL.append(kata18LI);
+    
+   for(item of sampleArray) {
+    let maxArray = Math.max(...sampleArray)
+    let somNum = document.createElement('p')
+    somNum.append(maxArray)
+    somNum.className = "Kata 18"
+    mainElement.append(maxArray)
+   }
