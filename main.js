@@ -9,13 +9,13 @@ const mainElement = document
 
 const kata1heading = document.createElement('h1')
 kata1heading.append('Katat 1')
-mainElement.append(kata2heading)
+mainElement.append(kata1heading)
 
 for (let index = 1; index <= 20; index++) {
     let coolText = document.createElement('p')
     coolText.append(index)
     coolText.className = "Kata 1"
-    documentBody.append(cooltext)
+    documentBody.append(kata1heading)
 }
 
 const kata2heading = document.createElement('h1')
@@ -26,7 +26,7 @@ for (let index = 2; index <= 20; index++) {
     let coolText = document.createElement('p')
     coolText.append(index)
     coolText.className = "Kata 2"
-    documentBody.append(cooltext)
+    documentBody.append(kata2heading)
 }
 const kata2heading = document.createElement('h1')
 kata3heading.append('Katat 3')
